@@ -1,0 +1,143 @@
+:root{
+  --bg: #f7f7f5;
+  --baby-blue: #d9eefb;
+  --beige: #f1e9df;
+  --white: #ffffff;
+  --text: #1f2d3d;
+  --muted: #516077;
+  --accent: #8fbbe8;
+  --max-width: 1100px;
+  --radius: 12px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,var(--bg), #fbfcfd);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  font-size:16px;
+  padding-bottom:60px;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:28px;
+}
+
+.header-hero{
+  background:linear-gradient(180deg, rgba(217,238,251,0.9), rgba(241,233,223,0.6));
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(31,45,61,0.06);
+  margin-bottom:18px;
+}
+
+/* Use an img with object-fit: contain so the whole image is visible (no important cropping) */
+.hero-wrap{
+  width:100%;
+  height:460px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--baby-blue);
+}
+
+.hero-image{
+  max-width:1200px;
+  width:100%;
+  height:420px;
+  object-fit:contain;
+  display:block;
+  border-radius:6px;
+  box-shadow:0 8px 20px rgba(31,45,61,0.08);
+  background: rgba(255,255,255,0.35);
+  padding:6px;
+}
+
+.site-title{
+  padding:18px 28px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.logo{
+  width:72px;
+  height:72px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--beige),var(--baby-blue));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 6px 18px rgba(31,45,61,0.06);
+  font-weight:700;
+  color:var(--text);
+  font-size:18px;
+}
+
+.title-text h1{
+  margin:0;
+  font-size:28px;
+  letter-spacing:1px;
+}
+
+.title-text p{margin:6px 0 0; color:var(--muted)}
+
+.nav{
+  display:flex;
+  gap:12px;
+  margin-left:auto;
+  align-items:center;
+  font-weight:600;
+  color:var(--accent);
+}
+
+.main{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:28px;
+  align-items:start;
+}
+
+.card{
+  background:var(--white);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 6px 24px rgba(31,45,61,0.04);
+}
+
+.article h2{
+  margin-top:0;
+  color:var(--text);
+  font-size:22px;
+}
+
+.article p{color:var(--muted); margin-bottom:12px; text-align:justify}
+
+.aside h3{margin-top:0}
+.tag{display:inline-block;background:var(--beige);padding:6px 10px;border-radius:999px;font-size:13px;margin:6px 6px 0 0}
+
+.footer{
+  margin-top:32px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Subtle article intro */
+.lead{font-size:15px; color:var(--muted); margin-bottom:12px}
+
+/* Responsive */
+@media(max-width:1000px){
+  .main{grid-template-columns:1fr; padding:0 8px}
+  .nav{display:none}
+  .hero-wrap{height:280px}
+  .hero-image{height:240px}
+}
