@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>TEA em Foco</title>
+
+    <!-- se você tiver um styles.css no mesmo diretório, ele continuará sendo carregado -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- estilos mínimos embutidos para garantir que o cabeçalho funcione ao colar rápido -->
+    <style>
+      :root{
+        --bg:#f7fbff;
+        --accent:#7fb3d5;
+        --text:#213444;
+      }
+      *{box-sizing:border-box}
+      body{
+        margin:0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color:var(--text);
+        background:var(--bg);
+        line-height:1.5;
+      }
+      header{
+        text-align:center;
+        padding:0;
+        background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.8));
+      }
+      /* imagem de capa: use header-image.png no mesmo diretório do HTML */
+      .header-img{
+        display:block;
+        width:100%;
+        max-height:420px;     /* ajusta altura máxima */
+        object-fit:cover;     /* corta mantendo o centro */
+      }
+      header h1{
+        margin:18px 0 6px;
+        font-size:2.6rem;
+        letter-spacing:0.06em;
+      }
+      .subtitle{
+        margin:0 0 14px;
+        color:#4a6b7a;
+        font-size:1rem;
+      }
+      nav{
+        display:flex;
+        gap:10px;
+        justify-content:center;
+        flex-wrap:wrap;
+        padding:14px 10px 26px;
+      }
+      nav a{
+        text-decoration:none;
+        color:var(--accent);
+        padding:8px 12px;
+        border-radius:8px;
+        font-weight:600;
+      }
+      nav a:hover{ background: rgba(127,179,213,0.12) }
+
+      main{ max-width:900px; margin:28px auto; padding:0 18px 60px; }
+      section{ margin-bottom:22px; }
+      h2{ font-size:1.1rem; margin-bottom:8px; color:#173244 }
+      footer{ text-align:center; padding:18px 8px; color:#6b7f8b; background:transparent; }
+      
+      /* acessibilidade: esconder texto alternativo caso imagem falhe (já deixamos alt="") */
+      @media (min-width:900px){
+        header h1{ font-size:3.2rem }
+      }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Capa corrigida -->
-       <img src="header-image.png" alt="" class="header-img">
-        
+        <!-- <<--- AQUI: certifique-se de que o arquivo header-image.png está NA MESMA PASTA DO HTML --->
+        <img src="header-image.png" alt="" class="header-img">
+
         <h1>TEA em Foco</h1>
         <p class="subtitle">Informação confiável e atualizada sobre o Transtorno do Espectro Autista</p>
+
         <nav>
             <a href="#oque">O que é</a>
             <a href="#diagnostico">Diagnóstico</a>
