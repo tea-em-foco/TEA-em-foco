@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEA em Foco</title>
+  <style>
+    :root{
+      --bg:#faf9f7;
+      --baby-blue:#dff3ff;
+      --nude:#f5e9e0;
+      --soft-white:#ffffff;
+      --muted:#7b7b7b;
+      --accent:#7fb3d5;
+      --max-width:1000px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#222}
+    .container{max-width:var(--max-width);margin:28px auto;padding:24px}
+    header{background:linear-gradient(90deg,var(--baby-blue),var(--nude));padding:28px;border-radius:16px;box-shadow:0 6px 18px rgba(20,30,40,0.06)}
+    .site-title{font-size:36px;margin:0;font-weight:700;letter-spacing:0.6px}
+    .site-sub{margin-top:6px;color:var(--muted)}
+    nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .nav-link{background:var(--soft-white);padding:10px 14px;border-radius:12px;cursor:pointer;border:1px solid rgba(120,130,140,0.08);font-weight:600}
+    .nav-link:hover{transform:translateY(-2px)}
+    main{margin-top:22px}
+    .page{display:none;background:var(--soft-white);padding:20px;border-radius:12px;margin-bottom:18px;box-shadow:0 6px 14px rgba(18,30,40,0.03)}
+    .page.active{display:block}
+    h1,h2{color:#144055}
+    h1{font-size:28px}
+    h2{font-size:20px;margin-top:18px}
+    p{line-height:1.6;color:#2b2b2b}
+    .sources{font-size:13px;color:var(--muted);margin-top:10px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .toc{margin:10px 0;padding:12px;background:linear-gradient(90deg,rgba(255,255,255,0.6),rgba(255,255,255,0.8));border-radius:10px}
+    .large-text{font-size:16px}
+    /* responsive */
+    @media (max-width:600px){.site-title{font-size:24px}.container{padding:16px}}
+    /* small card for tips */
+    .card{padding:12px;border-radius:10px;background:linear-gradient(180deg,var(--baby-blue),var(--soft-white));margin:10px 0}
+    .bibliography{font-size:14px}
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display:flex;flex-direction:column">
+        <h1 class="site-title">TEA em Foco</h1>
+        <div class="site-sub">Informações amplas, atualizadas e com fontes — cores suaves e leitura confortável.</div>
+        <nav id="main-nav" style="margin-top:14px"></nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home / Cover -->
+      <section id="home" class="page active">
+        <h1>Bem-vindo ao TEA em Foco</h1>
+        <p class="large-text">Este site é um hub educativo sobre o Transtorno do Espectro Autista (TEA). Navegue pelas guias acima para ler páginas detalhadas sobre definição, diagnóstico, genética, fatores ambientais, tratamento, evolução científica, curiosidades, bibliografia e muito mais. O conteúdo foi escrito para ser completo — com explicações técnicas e também linguagem acessível.</p>
+
+        <div class="toc">
+          <strong>Guias:</strong>
+          <ul>
+            <li><strong>O que é o TEA</strong> — características, sinais e heterogeneidade.</li>
+            <li><strong>Diagnóstico e Tratamento</strong> — critérios diagnósticos, avaliações, intervenções e terapias.</li>
+            <li><strong>Genética e TEA</strong> — o que se sabe, genes associados e variabilidade.</li>
+            <li><strong>Ambiente e TEA</strong> — exposições, fatores pré/perinatais e interação gene-ambiente.</li>
+            <li><strong>Evolução científica</strong> — como a pesquisa e tratamento avançaram com o tempo.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Leitura longa:</strong> cada página tem explicações extensas e referências. Role até o fim de cada página para ver as fontes e a bibliografia completa.</div>
+      </section>
+
+      <!-- Page: What is TEA -->
+      <section id="what" class="page">
+        <h1>1. O que é o TEA (Características principais)</h1>
+        <p>O Transtorno do Espectro Autista (TEA) é um conjunto amplo e heterogêneo de condições do neurodesenvolvimento que se manifestam, tipicamente, na primeira infância. As características centrais envolvem diferenças persistentes na comunicação social e comportamentos, interesses e atividades restritas e repetitivas. Essas diferenças afetam a interação com outras pessoas, a capacidade de comunicação verbal e não-verbal, e padrões de comportamento sensoriais e motores.</p>
+
+        <h2>Sinais e manifestações</h2>
+        <p>Os sinais do TEA variam muito de pessoa para pessoa. Entre os sinais mais comuns estão:</p>
+        <ul>
+          <li>Dificuldade em iniciar ou manter conversas e interações sociais;</li>
+          <li>Dificuldade em entender emoções, sinais sociais (expressões faciais, gestos) e pontos de vista alheios;</li>
+          <li>Interesses intensos e restritos — por exemplo, hobbies com foco profundo em temas específicos;</li>
+          <li>Comportamentos repetitivos — movimentos rítmicos, alinhamento de objetos, rituais;</li>
+          <li>Sensibilidade aumentada ou diminuída a estímulos sensoriais como som, toque, luz e cheiro;</li>
+          <li>Diferenças nas habilidades de aprendizagem: alguns têm habilidades cognitivas muito elevadas em áreas específicas enquanto apresentam dificuldades em outras áreas.</li>
+        </ul>
+
+        <h2>Heterogeneidade e terminologia</h2>
+        <p>O termo "espectro" reflete a ampla variedade de apresentações clínicas. O TEA pode ocorrer com ou sem deficiência intelectual, com ou sem dificuldades significativas de linguagem. A necessidade de suporte também varia — algumas pessoas precisam de apoio intensivo, e outras têm independência funcional com apoio mínimo.</p>
+
+        <h2>Considerações importantes</h2>
+        <p>É crucial entender que o TEA não é uma única causa ou uma doença simples; é uma classificação que descreve um conjunto de diferenças do desenvolvimento neurológico. Há uma diversidade grande entre indivíduos autistas — por isso a avaliação deve ser personalizada.</p>
+
+        <div class="sources">Fontes para esta página: CDC, WHO, NIMH, APA. Veja bibliografia ao final.</div>
+      </section>
+
+      <!-- Page: Diagnosis & Treatment -->
+      <section id="diag" class="page">
+        <h1>2. Diagnóstico e Tratamento</h1>
+        <h2>Diagnóstico</h2>
+        <p>O diagnóstico costuma ser clínico, baseado em observações do comportamento e no histórico do desenvolvimento. O DSM-5 (Manual Diagnóstico e Estatístico de Transtornos Mentais) define critérios que incluem déficits persistentes na comunicação social e padrões restritos/repetitivos de comportamento. A detecção precoce é importante: avaliações de desenvolvimento e triagens em consultas pediátricas aumentam a chance de identificar sinais nos primeiros anos.</p>
+
+        <h2>Processo de avaliação</h2>
+        <p>Uma avaliação completa tipicamente inclui:</p>
+        <ul>
+          <li>Entrevista clínica com familiares/cuidadores;</li>
+          <li>Observação direta (por exemplo, ADOS - Autism Diagnostic Observation Schedule);</li>
+          <li>Avaliações do desenvolvimento e cognitivas (testes padronizados);</li>
+          <li>Avaliação de linguagem e terapia fonoaudiológica;</li>
+          <li>Exames médicos para descartar causas metabólicas ou neurológicas associadas e, em alguns casos, testes genéticos quando há indicação.</li>
+        </ul>
+
+        <h2>Tratamento e intervenções</h2>
+        <p>Não existe uma "cura" para o TEA, mas existem intervenções que melhoram a qualidade de vida, autonomia e habilidades sociais e comunicativas. Intervenções efetivas costumam ser multimodais e personalizadas:</p>
+        <ul>
+          <li>Intervenções comportamentais baseadas em evidências (ex.: ABA — Análise do Comportamento Aplicada —, quando bem feitas e centradas na pessoa);</li>
+          <li>Intervenções educacionais estruturadas e ensino adaptado às necessidades;</li>
+          <li>Terapia da fala e linguagem; terapia ocupacional (principalmente para questões sensoriais e habilidades de vida diária);</li>
+          <li>Intervenções familiares e de suporte parental — orientação e treinamento de cuidadores;</li>
+          <li>Medicação pode ser indicada para tratar sintomas associados (ansiedade, depressão, agressividade, irritabilidade), mas não há fármaco que trate o TEA em si.</li>
+        </ul>
+
+        <h2>Importância da intervenção precoce</h2>
+        <p>Intervenções iniciadas cedo, especialmente antes dos 3-4 anos, tendem a proporcionar ganhos mais significativos em desenvolvimento da linguagem e habilidades sociais. Contudo, intervenções em qualquer idade podem gerar benefícios.</p>
+
+        <div class="sources">Fontes desta página: DSM-5, CDC, NIMH, publicações científicas. Consulte bibliografia no fim.</div>
+      </section>
+
+      <!-- Page: Genetics -->
+      <section id="genetics" class="page">
+        <h1>3. Relação da genética com o TEA</h1>
+        <p>Genética desempenha um papel importante no risco de TEA. Estudos em família e gêmeos mostram que fatores genéticos explicam uma parte significativa da variação no risco — estimativas variam, mas mostram contribuição genética substancial. A arquitetura genética do TEA é complexa: envolve tanto variantes raras (por exemplo, mutações de alto impacto, deleções e duplicações cromossômicas) quanto variantes comuns com efeito pequeno cada uma, mas que somadas aumentam o risco.</p>
+
+        <h2>Tipos de variações genéticas</h2>
+        <p>Entre as variações que aumentam risco estão:</p>
+        <ul>
+          <li>Copy number variants (CNVs) — deleções ou duplicações de trechos do DNA;</li>
+          <li>Mutação de novo — alterações que surgem no indivíduo e não estão presentes nos pais;</li>
+          <li>Polimorfismos comuns — muitos com efeito pequeno, mas cumulativos (poligênicos).</li>
+        </ul>
+
+        <h2>O que significam para diagnóstico e aconselhamento</h2>
+        <p>Testes genéticos podem ser indicados quando há suspeita clínica de síndrome genética associada, em casos com atraso cognitivo significativo, anomalias congênitas ou história familiar. Um resultado positivo pode ajudar no manejo clínico (detectar comorbidades médicas) e no aconselhamento genético. Mas a maioria dos casos de TEA não terá uma única mutação explicativa identificada.</p>
+
+        <h2>Pesquisa atual e perspectivas</h2>
+        <p>A pesquisa genética tem expandido a lista de genes associados ao TEA e mostrado que diferentes conjuntos de variantes estão ligados a diferentes perfis clínicos. Estudos recentes (amostras grandes e genômica avançada) apontam para subtipos genéticos e caminhos moleculares que podem, no futuro, abrir opções terapêuticas direcionadas.</p>
+
+        <div class="sources">Fontes: revisões científicas, Nature/Science/NCBI. Veja bibliografia ao fim.</div>
+      </section>
+
+      <!-- Page: Environment -->
+      <section id="environment" class="page">
+        <h1>4. Relação do ambiente com o TEA</h1>
+        <p>Ambiente aqui refere-se a exposições pré-natais, perinatais e fatores ambientais que interagem com predisposição genética. Fatores como idade parental avançada, complicações na gestação, exposição a certas substâncias durante a gravidez e prematuridade foram associados, em alguns estudos, a maior risco. Importante: associação não implica causalidade direta, e muitos fatores estudados têm efeitos pequenos ou incertos.</p>
+
+        <h2>Exemplos de fatores estudados</h2>
+        <ul>
+          <li>Idade paterna e materna avançada;</li>
+          <li>Exposição a poluentes ambientais, metais (estudos ainda em desenvolvimento e com resultados mistos);</li>
+          <li>Complicações obstétricas e prematuridade;</li>
+          <li>Deficiências nutricionais maternas em contextos específicos (ex.: alguns estudos examinaram ácido fólico e outros nutrientes);</li>
+        </ul>
+
+        <h2>Interação gene-ambiente</h2>
+        <p>A visão atual é que a maioria dos casos de TEA resulta de interações entre fatores genéticos e ambientais — os genes definem uma suscetibilidade e fatores do ambiente podem modular essa expressão. Isso torna o campo de pesquisa complexo e em rápida evolução.</p>
+
+        <div class="sources">Fontes: revisões científicas e artigos de epidemiologia. Consulte bibliografia.</div>
+      </section>
+
+      <!-- Page: Scientific evolution -->
+      <section id="history" class="page">
+        <h1>5. Evolução no mundo acadêmico e científico</h1>
+        <p>A compreensão do TEA mudou radicalmente nas últimas décadas. Antes visto como raro ou ligado a causas únicas, hoje percebemos grande heterogeneidade e múltiplos fatores de risco. As áreas que mais avançaram incluem:</p>
+        <ul>
+          <li><strong>Diagnóstico:</strong> critérios diagnósticos mais precisos (DSM-5) e triagens que permitem identificação precoce;</li>
+          <li><strong>Genômica:</strong> grandes estudos populacionais e sequenciamento revelaram centenas de variantes associadas, subdividindo perfis genéticos;</li>
+          <li><strong>Intervenção:</strong> evidência crescente para intervenções comportamentais e educativas com benefícios mensuráveis;</li>
+          <li><strong>Abordagens multidisciplinares:</strong> integração entre neurologia, psiquiatria, genética, terapia ocupacional e educação especial;</li>
+          <li><strong>Participação e direitos:</strong> maior voz de pessoas autistas em direcionar pesquisa e abordagens de suporte centradas na qualidade de vida.</li>
+        </ul>
+
+        <h2>Tendências futuras</h2>
+        <p>O futuro aponta para diagnósticos mais personalizados, terapias que considerem subtipos biológicos, e maior preocupação com inclusão social, emprego e qualidade de vida. A pesquisa também tem focado em entender comorbidades (ansiedade, sono, epilepsia) para um manejo integrado.</p>
+
+        <div class="sources">Fontes: artigos científicos recentes e revisões. Bibliografia abaixo.</div>
+      </section>
+
+      <!-- Additional: curiosities -->
+      <section id="curiosities" class="page">
+        <h1>Curiosidades e informações complementares</h1>
+        <p>- A razão de sexo (muitos estudos mostram maior diagnóstico em meninos) é complexa e envolve fatores biológicos e possivelmente vieses de diagnóstico.</p>
+        <p>- Pessoas dentro do espectro podem apresentar talentos excepcionais em áreas específicas (ex.: memória, matemática, música), mas isso não é universal.</p>
+        <p>- A linguagem usada para falar sobre o autismo ("pessoa com autismo" vs "pessoa autista") varia por preferência pessoal — quando possível, pergunte à pessoa qual terminologia prefere.</p>
+      </section>
+
+      <!-- Bibliography page -->
+      <section id="bibliography" class="page">
+        <h1>Bibliografia e fontes</h1>
+        <p>As informações deste site foram compiladas a partir de fontes confiáveis, incluindo agências de saúde pública, revisões científicas e manuais de diagnóstico. Abaixo há uma bibliografia com links para leitura e verificação.</p>
+        <div class="bibliography">
+          <ol>
+            <li><a href="https://www.cdc.gov/autism/" target="_blank">Centers for Disease Control and Prevention (CDC) — Autism Spectrum Disorder</a></li>
+            <li><a href="https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders" target="_blank">World Health Organization (WHO) — Autism Spectrum Disorders</a></li>
+            <li><a href="https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder" target="_blank">National Institute of Mental Health (NIMH) — Autism Spectrum Disorder</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed / NCBI — Revisões científicas sobre genética e ambiente (ex.: Almandil et al., 2019)</a></li>
+            <li><a href="https://www.apa.org/topics/autism-spectrum-disorder" target="_blank">American Psychiatric Association (DSM-5 criteria)</a></li>
+            <li><a href="https://medlineplus.gov/genetics/condition/autism-spectrum-disorder/" target="_blank">MedlinePlus Genetics — Autism Spectrum Disorder</a></li>
+            <li><a href="https://www.nature.com/" target="_blank">Artigos em periódicos de alto impacto (Nature, Science) sobre genética do TEA</a></li>
+          </ol>
+        </div>
+
+        <p class="sources">Observação: links acima são pontos de partida — muita literatura primária e revisões podem ser consultadas para aprofundamento.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© TEA em Foco — Conteúdo informativo</div>
+        <div style="font-size:13px;color:var(--muted)">Feito para aprendizado — não substitui avaliação médica.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple client-side navigation (single-file, multi-page feel)
+    const pages = ['home','what','diag','genetics','environment','history','curiosities','bibliography'];
+    const nav = document.getElementById('main-nav');
+    const labels = {
+      home:'Capa',
+      what:'O que é o TEA',
+      diag:'Diagnóstico & Tratamento',
+      genetics:'Genética e TEA',
+      environment:'Ambiente e TEA',
+      history:'Evolução Científica',
+      curiosities:'Curiosidades',
+      bibliography:'Bibliografia'
+    };
+    pages.forEach(id=>{
+      const btn = document.createElement('button');
+      btn.className='nav-link';
+      btn.textContent=labels[id];
+      btn.onclick = ()=>showPage(id);
+      nav.appendChild(btn);
+    });
+    function showPage(id){
+      pages.forEach(p=>document.getElementById(p).classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    // Allow deep linking via ?page= or #
+    function parseInitial(){
+      const url = new URL(window.location.href);
+      const qp = url.searchParams.get('page');
+      const hash = window.location.hash.replace('#','');
+      if(qp && pages.includes(qp)) showPage(qp);
+      else if(hash && pages.includes(hash)) showPage(hash);
+    }
+    parseInitial();
+
+    // Accessibility: keyboard navigation
+    document.addEventListener('keydown', e=>{
+      if(e.key==='ArrowLeft' || e.key==='ArrowRight'){
+        const active = pages.findIndex(p=>document.getElementById(p).classList.contains('active'));
+        if(active===-1) return;
+        const next = e.key==='ArrowRight' ? (active+1)%pages.length : (active-1+pages.length)%pages.length;
+        showPage(pages[next]);
+      }
+    });
+  </script>
+</body>
+</html>
